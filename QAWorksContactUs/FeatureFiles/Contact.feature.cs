@@ -66,9 +66,11 @@ namespace QAWorksContactUs.FeatureFiles
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Valid Submission")]
+        [NUnit.Framework.CategoryAttribute("ContactUsPage")]
         public virtual void ValidSubmission()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Valid Submission", ((string[])(null)));
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Valid Submission", new string[] {
+                        "ContactUsPage"});
 #line 7
  this.ScenarioSetup(scenarioInfo);
 #line 8
@@ -86,6 +88,46 @@ namespace QAWorksContactUs.FeatureFiles
                         "please contact me I want to find out more"});
 #line 10
  testRunner.Then("I should be able to contact qaworks with the following info", ((string)(null)), table1, "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Drop Email")]
+        [NUnit.Framework.CategoryAttribute("EmailUsPage")]
+        public virtual void DropEmail()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Drop Email", new string[] {
+                        "EmailUsPage"});
+#line 15
+ this.ScenarioSetup(scenarioInfo);
+#line 16
+ testRunner.Given("I am on the Qaworks site", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 17
+ testRunner.When("I navigate to Contact page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 18
+ testRunner.Then("Click on Drop Email to navigate to Email page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Carrer opputunities")]
+        [NUnit.Framework.CategoryAttribute("CareersPage")]
+        public virtual void CarrerOpputunities()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Carrer opputunities", new string[] {
+                        "CareersPage"});
+#line 22
+ this.ScenarioSetup(scenarioInfo);
+#line 23
+ testRunner.Given("I am on the Qaworks site", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 24
+ testRunner.When("I navigate to Contact page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 25
+ testRunner.And("navigate to Careers page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 26
+ testRunner.Then("I should be able to get the list of the jobs", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
