@@ -1,4 +1,4 @@
-QA Works Blah Blah
+QA Works Contact Us Page
 ==========
 
 ## Setup
@@ -15,3 +15,7 @@ Open the project in Visual Studio
 Build the Solution
 
 Run the tests in Test Explorer
+
+## Limitations
+
+Windows only

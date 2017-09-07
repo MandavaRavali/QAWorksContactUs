@@ -15,3 +15,7 @@ Open the project in Visual Studio
 Build the Solution
 
 Run the tests in Test Explorer
+
+## Limitations
+
+Windows only
